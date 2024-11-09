@@ -168,9 +168,9 @@ body {
 
 .projects {
   grid-area: projects;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* gap: 23px; */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .projects {
@@ -180,6 +180,16 @@ body {
 .projects a:hover img {
   opacity: 0.8;
   transition: 0.3s;
+}
+
+.projects h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 20%;
+}
+
+.projects .group-projects {
+  display: flex;
 }
 
 @media (max-width: 768px) {
@@ -202,11 +212,11 @@ body {
   grid-template-columns: 1fr;
   background-color: #e5e6e8; 
   margin: 0 auto;
-  padding: 10%;
-  gap: 5rem;
+  padding: 5% 10% 0;
+  gap: 6rem;
 }
 
-.item-img-top {
+.about .quem-somos-img-top {
   width: 100%;
   height: 3rem;
   background-image: url(../images/bg-about.svg);
@@ -215,8 +225,32 @@ body {
   background-position: center;
 }
 
-.about .item {
-  /* padding: 20%; */
+.about .quem-somos {
+  background-image: url(../images/bg-about-border-left.png), url(../images/bg-about-border-right.png);
+  background-size: 32%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  transform: rotate();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 10rem;
+}
+
+.about .quem-somos i,
+.about .valores i {
+  font-size: 5rem;
+  color: #053e8b;
+}
+
+.about .quem-somos h3 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.about .missao,
+.about .visao {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,16 +258,24 @@ body {
   gap: 4rem;
 }
 
-.item-content {
+.group-content {
   display: flex;
   gap: 2.5rem;
 }
 
-.item.valores-content {
+.valores.valores-content {
+  background-image: url(../images/bg-about-border-left-bottom.png), url(../images/bg-about-border-right-bottom.png);
+  background-size: 32%;
+  background-repeat: no-repeat;
+  background-position: left, right;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-bottom: 20rem;
 }
 
-.item.valores-content div {
+.valores.valores-content .content {
   text-align: center;
   display: flex;
   flex-basis: 200px;
@@ -241,19 +283,20 @@ body {
   z-index: 2;
 }
 
-.item.valores-content span {
+.valores.valores-content span {
   font-weight: bold;
   font-size: 1.8rem;
   display: block;
   margin-bottom: 1.2rem;
 }
 
-.item.valores-content p {
+.valores.valores-content p {
   padding: 2rem;
   
 }
 
-.about .item i {
+.about .missao i, 
+.about .visao i {
   font-size: 5rem;
   color: #D9B42F;
 }
@@ -262,19 +305,29 @@ body {
   color: #053e8b;
 }
 
-.about .item h3 {
+.about .missao h3,
+.about .valores h3,
+.about .visao h3 {
   font-weight: 700;
   font-size: 3rem;
+}
+
+@media (max-width: 425px) {
+  .about .item {
+    text-align: center;
+  }
+
 }
 
 .suport {
   grid-area: suport;
   display: grid;
   place-items: center; 
-  background-image: url(../images/bg-suport.jpg);
+  background-image: url(../images/bg-suport.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  padding: 5%;
+  padding: 0 5%;
 }
 
 .suport h2 {
@@ -283,19 +336,16 @@ body {
   font-family: "League Spartan", serif;
   font-weight: 500;
   text-align: left;
-  margin: 10rem 0 0 0;
+  margin: 10rem 0 5rem 0;
   text-transform: capitalize;
 }
 
 .suport-container {
-  padding: 60px 20px;
+  padding: 0 20px;
   display: flex;
   gap: 20px;
   justify-content: center;
-  border-radius: 1.5rem;
   margin-bottom: 4rem;
-  background-color: #f0c808;
-  border-radius: 100px 100px 0 0;
 }
 
 .suport-item {
@@ -319,6 +369,7 @@ body {
   padding: 15px;
   width: 100%;
   max-width: 700px;
+  border-bottom: 1px solid #053e8b;
   border-radius: 1rem;
   cursor: pointer;
   text-align: center;
@@ -357,17 +408,33 @@ body {
 }
 
 .contact {
-  width: 450px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    grid-area: contact;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 5% 7%;
+    padding: 5% 7%;
+}
+
+.contact h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.contact form > input {
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .footer {
@@ -430,102 +497,3 @@ body {
   color: #f0c808;
 }
 
-
-
-/** Aqui */
-.services .service {
-  padding: 70px 20px;
-}
-
-.services .service img {
-  width: 250px;
-  margin-bottom: 30px;
-}
-
-.services .service h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.services .service p {
-  font-size: 2rem;
-  font-weight: 400;
-  max-width: 400px;
-  margin: 20px auto 0;
-  line-height: 25px;
-}
-
-.services .service:nth-child(1) {
-  background-color: #e5e6e8;
-}
-
-.services .service:nth-child(2) {
-  background-color: #f6ba26;
-}
-
-@media (max-width: 425px) {
-  .services {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-.about {
-  grid-area: about;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #e5e6e8;
-  max-width: var(--max-width-size);
-  margin: 0 auto;
-  padding: 10%;
-}
-
-.about .item {
-  padding: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-
-
-.about .item p {
-  font-weight: 400;
-  font-size: 1.8rem;
-  margin: 30px 0;
-}
-
-.about .image {
-  height: 100%;
-  width: 100%;
-}
-
-.about .item .btn-know-more {
-  font-size: 1.6rem;
-  align-self: flex-start;
-}
-
-.about .item .btn-know-more:hover {
-  font-weight: 700;
-}
-
-.about .image.right {
-  background: url(../images/bg-about-1.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-.about .image.left {
-  background: url(../images/bg-about-2.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-.about .image.right-design {
-  background: url(../images/bg-about-3.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-@media (max-width: 425px) {
-  .about .item {
-    text-align: center;
-  }
