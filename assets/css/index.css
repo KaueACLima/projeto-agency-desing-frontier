@@ -423,18 +423,50 @@ body {
 .contact h2 {
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 2.5rem;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 .contact form > input {
+  width: 80%;
   padding: 1rem;
   border-radius: 1rem;
+}
+
+.contact textarea {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  resize: none;
+}
+
+.contact .btnEnviar {
+  background-color: #053e8b;
+  color: #e5e6e8;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 50%;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.contact .btnEnviar:hover {
+  background-color: #fad51a;
+  color: #000;
+  transition: .3s all;
 }
 
 .footer {

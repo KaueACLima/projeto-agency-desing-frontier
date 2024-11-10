@@ -1,19 +1,4 @@
-.header nav ul {
-  display: flex;
-}
-
-.header nav ul li a {
-  color: #053E8B;
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 0 30px;
-  border-radius: 50px;
-}
-
-.header nav ul li a:hover {
-  color: #fff;
-  background-color: #ffbd1b;
-}
+/** Início Menu Hamburguer */
 
 .header .menu {
   display: none;
@@ -75,6 +60,100 @@
   bottom: 0;
 }
 
+/** Fim Menu Hamburguer */
+
+/** Início Menu Header */
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li a {
+  color: #053E8B;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0 30px;
+  border-radius: 50px;
+}
+
+.header nav ul li a:hover {
+  color: #fff;
+  background-color: #ffbd1b;
+}
+
+.header .language {
+  position: relative;
+  width: 220px;
+  margin-left: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .language .language-selected {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .language ul {
+  position: absolute;
+  top: 50px;
+  background-color: #e5e6e8;
+  flex-direction: column;
+  padding-top: 10px;
+  z-index: 1;
+  display: none;
+}
+
+/* .header .language:hover ul {
+  display: block;
+} */
+
+.header .language ul li {
+  display: flex;
+}
+
+.header .language ul li:nth-child(2) {
+  margin: 15px 0;
+}
+
+.header .language ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header .language ul li a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #053E8B;
+}
+
+.header .language ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+a.br::before {
+  background: url(../images/flag-br.png);
+}
+
+a.en::before {
+  background: url(../images/flag-en.png);
+}
+
+a.es::before {
+  background: url(../images/flag-es.png);
+}
+
 @media (max-width: 900px) {
   .header .menu {
     display: block;
@@ -108,3 +187,6 @@
   }
 }
 
+
+
+/** Fim Menu Header */
