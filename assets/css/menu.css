@@ -154,6 +154,17 @@ a.es::before {
   background: url(../images/flag-es.png);
 }
 
+.language-selected a .fa-solid {
+  font-size: 2.5rem;
+  color: #053E8B;
+}
+
+.language-selected a .fa-solid:hover {
+  color: #ffbd1b;
+  transition: color .3s;
+}
+
+
 @media (max-width: 900px) {
   .header .menu {
     display: block;

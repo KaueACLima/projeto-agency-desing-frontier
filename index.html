@@ -65,7 +65,6 @@
       </nav>
     </div>
   </header>
-
   <section class="hero">
   </section>
   <section class="services" id="services">
@@ -357,12 +356,12 @@
     <div>
       <h2>Entre em contato conosco</h2>
       <p>Preencha este formulário e logo entraremos em contato com você.</p>
-      <form action="form.php" method="get">
+      <form action="./assets/php/index.php" method="POST">
         <label for="inEmail"></label>
-        <input type="email" name="nome" id="inEmail" placeholder="E-mail*">
+        <input type="email" name="email" id="inEmail" placeholder="E-mail*" required autocomplete="off">
 
         <label for="inAssunto"></label>
-        <input type="email" name="email" id="inAssunto" placeholder="Assunto*">
+        <input type="text" name="assunto" id="inAssunto" placeholder="Assunto*" required autocomplete="off">
 
         <label for="inComentario"></label>
         <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="Mensagem*"></textarea>
