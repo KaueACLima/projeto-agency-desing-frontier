@@ -36,8 +36,8 @@
   <header class="header">
     <div class="header-container">
       <div class="logo-marca-container">
-        <img src="./assets/images/lg-df-montain.png" alt="Logo Desing Frontier">
         <a href="#">
+          <img src="./assets/images/lg-df-montain.png" alt="Logo Desing Frontier">
         </a>
       </div>
       <nav>
@@ -65,7 +65,6 @@
       </nav>
     </div>
   </header>
-
   <section class="hero">
   </section>
   <section class="services" id="services">
@@ -153,7 +152,6 @@
         </a>
       </div>
   </section>
-  </div>
   <section class="suport" id="suport">
     <h2>FAQ</h2>
     <div class="suport-container">
@@ -341,6 +339,9 @@
       <h2>Contacta con nosotros</h2>
       <p>Llene este formulario y nos comunicaremos con usted a la brevedad.</p>
       <form action="form.php" method="get">
+        <label for="inName"></label>
+        <input type="text" name="nome" id="inName" placeholder="Nombre*" required autocomplete="off">
+
         <label for="inEmail"></label>
         <input type="email" name="nome" id="inEmail" placeholder="E-mail*">
 
@@ -348,11 +349,28 @@
         <input type="email" name="email" id="inAssunto" placeholder="Sujeto*">
 
         <label for="inComentario"></label>
-        <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="Message*"></textarea>
-        <input class="btnEnviar" type="submit" value="para enviar">
+        <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="
+        Mensaje*"></textarea>
+        <input class="btnEnviar" type="submit" value="Para enviar">
       </form>
     </div>
   </section>
+  <section class="newsletter" id="newsletter">
+    <h2>Newsletter</h2>
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <p>
+          Regístrate y mantente al día de nuestros proyectos y promociones. Prometemos actualizarlo solo de vez en cuando.
+        </p>
+      </div>
+      <div class="newsletter-sign-up">
+        <label for="inEmailSignUp"></label>
+        <input type="text" name="emailSignUp" id="inEmailSignUp" autocomplete="off">
+        <input type="submit" value="Para enviar">
+      </div>
+    </div>
+  </section>
+  <section class="our-team" id="ourTeam"></section>
   <footer class="footer">
     <h4>Desing Frontier</h4>
     <nav>
@@ -376,9 +394,9 @@
       </ul>
       <ul>
         <li><a href="#services">São Paulo</a></li>
-        <li><a href="#projects">Av. xxxxx, xxxx - xx</a></li>
-        <li><a href="#suport">xxxxx-xxx</a></li>
-        <li><a href="#about">5511xxxxxxxxx</a></li>
+        <li><a href="#projects">Av. da Inovação</a></li>
+        <li><a href="#suport">01010-010</a></li>
+        <li><a href="#about">(11) 3456-7890</a></li>
       </ul>
     </nav>
     <div class="social">

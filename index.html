@@ -36,8 +36,8 @@
   <header class="header">
     <div class="header-container">
       <div class="logo-marca-container">
-        <img src="./assets/images/lg-df-montain.png" alt="Logo Desing Frontier">
         <a href="#">
+          <img src="./assets/images/lg-df-montain.png" alt="Logo Desing Frontier">
         </a>
       </div>
       <nav>
@@ -51,8 +51,13 @@
           <li><a href="#services">Serviços</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#suport">Suporte</a></li>
-          <li><a href="#about">Sobre</a></li>
+          <li class="drop-hover"><a href="#about">Sobre <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="drop">
+                <a class="a-drop" href="ourTeam">Nossa equipe</a>
+            </ul>
+          </li>
           <li><a href="#contact">Contato</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
           <div class="language">
             <div class="language-selected">
               <a href=""><i class="fa-solid fa-language" id="icon-translate"></i></a>
@@ -84,14 +89,22 @@
     <div class="item">
       <h3>Landing page</h3>
       <p>
-        Uma landing page bem projetada faz toda a diferença em campanhas de marketing digital. Na Design Frontier, criamos landing pages otimizadas para conversão, pensadas para captar a atenção dos visitantes e transformá-los em clientes. Trabalhamos com design estratégico, chamadas para ação claras e técnicas de SEO para maximizar o impacto. Nossas landing pages são ideais para lançar produtos, capturar leads e aumentar a visibilidade da sua marca de maneira rápida e eficaz.
+        Uma landing page bem projetada faz toda a diferença em campanhas de marketing digital. Na Design Frontier,
+        criamos landing pages otimizadas para conversão, pensadas para captar a atenção dos visitantes e transformá-los
+        em clientes. Trabalhamos com design estratégico, chamadas para ação claras e técnicas de SEO para maximizar o
+        impacto. Nossas landing pages são ideais para lançar produtos, capturar leads e aumentar a visibilidade da sua
+        marca de maneira rápida e eficaz.
       </p>
       <a href="#" class="btn-know-more">Saiba mais</a>
     </div>
     <div class="item">
       <h3>Design</h3>
       <p>
-        O design de um site é o cartão de visitas digital de uma marca. Na Design Frontier, desenvolvemos layouts exclusivos e atraentes que refletem a essência e os valores de cada cliente. Com uma abordagem focada na experiência do usuário (UX) e interface (UI), criamos designs responsivos e modernos, que se adaptam a qualquer dispositivo, garantindo uma navegação agradável e intuitiva. Transformamos ideias em visuais impactantes que fortalecem a identidade de marca e promovem resultados.
+        O design de um site é o cartão de visitas digital de uma marca. Na Design Frontier, desenvolvemos layouts
+        exclusivos e atraentes que refletem a essência e os valores de cada cliente. Com uma abordagem focada na
+        experiência do usuário (UX) e interface (UI), criamos designs responsivos e modernos, que se adaptam a qualquer
+        dispositivo, garantindo uma navegação agradável e intuitiva. Transformamos ideias em visuais impactantes que
+        fortalecem a identidade de marca e promovem resultados.
       </p>
       <a href="#" class="btn-know-more">Saiba mais</a>
     </div>
@@ -357,6 +370,9 @@
       <h2>Entre em contato conosco</h2>
       <p>Preencha este formulário e logo entraremos em contato com você.</p>
       <form action="./assets/php/index.php" method="POST">
+        <label for="inName"></label>
+        <input type="text" name="nome" id="inName" placeholder="Nome*" required autocomplete="off">
+
         <label for="inEmail"></label>
         <input type="email" name="email" id="inEmail" placeholder="E-mail*" required autocomplete="off">
 
@@ -369,6 +385,22 @@
       </form>
     </div>
   </section>
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <h2>Newsletter <i class="fa-regular fa-newspaper"></i></h2>
+        <p>
+          Inscreva-se e fique por dentro dos nossos projetos e promoções. Prometemos te atualizar só de vez em quando.
+        </p>
+      </div>
+      <div class="newsletter-sign-up">
+        <label for="inEmailSignUp"></label>
+        <input type="text" name="emailSignUp" id="inEmailSignUp" placeholder="Digite seu e-mail" autocomplete="off">
+        <input class="btnSignUp" type="submit" value="Enviar">
+      </div>
+    </div>
+  </section>
+  <section class="our-team" id="ourTeam"></section>
   <footer class="footer">
     <h4>Desing Frontier</h4>
     <nav>
@@ -392,9 +424,9 @@
       </ul>
       <ul>
         <li><a href="#services">São Paulo</a></li>
-        <li><a href="#projects">Av. xxxxx, xxxx - xx</a></li>
-        <li><a href="#suport">xxxxx-xxx</a></li>
-        <li><a href="#about">5511xxxxxxxxx</a></li>
+        <li><a href="#projects">Av. da Inovação</a></li>
+        <li><a href="#suport">01010-010</a></li>
+        <li><a href="#about">(11) 3456-7890</a></li>
       </ul>
     </nav>
     <div class="social">

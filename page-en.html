@@ -36,8 +36,8 @@
   <header class="header">
     <div class="header-container">
       <div class="logo-marca-container">
-        <img src="./assets/images/lg-df-montain.png" alt="Logo Desing Frontier">
         <a href="#">
+          <img src="./assets/images/lg-df-montain.png" alt="Logo Desing Frontier">
         </a>
       </div>
       <nav>
@@ -65,7 +65,6 @@
       </nav>
     </div>
   </header>
-
   <section class="hero">
   </section>
   <section class="services" id="services">
@@ -154,7 +153,6 @@
         </a>
       </div>
   </section>
-  </div>
   <section class="suport" id="suport">
     <h2>FAQ</h2>
     <div class="suport-container">
@@ -341,15 +339,18 @@
       <h2>Contact us</h2>
       <p>Fill out this form and we will contact you shortly.</p>
       <form action="form.php" method="get">
+        <label for="inName"></label>
+        <input type="text" name="nome" id="inName" placeholder="Name*" required autocomplete="off">
+
         <label for="inEmail"></label>
-        <input type="email" name="nome" id="inEmail" placeholder="E-mail*">
+        <input type="email" name="email" id="inEmail" placeholder="E-mail*" required autocomplete="off">
 
         <label for="inAssunto"></label>
-        <input type="email" name="email" id="inAssunto" placeholder="Subject*">
+        <input type="text" name="assunto" id="inAssunto" placeholder="Subject*" required autocomplete="off">
 
         <label for="inComentario"></label>
         <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="Message*"></textarea>
-        <input class="btnEnviar" type="submit" value=",0To send">
+        <input class="btnEnviar" type="submit" value="To send">
       </form>
     </div>
   </section>

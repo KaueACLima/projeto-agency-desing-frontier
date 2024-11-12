@@ -69,7 +69,6 @@
 
 .header nav ul li a {
   color: #053E8B;
-  font-size: 2rem;
   font-weight: 500;
   padding: 0 30px;
   border-radius: 50px;
@@ -79,6 +78,30 @@
   color: #fff;
   background-color: #ffbd1b;
 }
+
+.header nav ul .drop-hover {
+  position: relative;
+} 
+
+.header nav ul .drop-hover .drop {
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.header nav ul .drop-hover .drop .a-drop {
+  display: block;
+  padding: 20px;
+  border-radius: none;
+}
+
+.header .drop-hover:hover .drop{
+  display: block;
+  height: 10rem;
+  border: 1px solid red;
+  z-index: 1;
+}
+
 
 .header .language {
   position: relative;

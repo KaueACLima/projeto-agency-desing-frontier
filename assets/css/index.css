@@ -12,6 +12,8 @@ body {
     "about about about about"
     "suport suport suport suport"
     "contact contact contact contact"
+    "newsletter newsletter newsletter newsletter"
+    "our-team our-team our-team our-team"
     "footer footer footer footer";
   grid-template-columns: repeat(4, 1fr);
   font-size: 1.6rem;
@@ -185,7 +187,7 @@ body {
 .projects h3 {
   font-size: 4rem;
   font-weight: 700;
-  margin-left: 20%;
+  margin-left: 18%;
 }
 
 .projects .group-projects {
@@ -412,12 +414,21 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/bg-contact.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     margin: 5% 7%;
     padding: 5% 7%;
+    position: relative;
+}
+
+.contact::before {
+  content: "";
+  width: 100%;
+  height: 70rem;
+  position: absolute;
+  background-image: url(../images/bg-contact.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: rotate(180deg);
 }
 
 .contact h2 {
@@ -467,6 +478,76 @@ body {
   background-color: #fad51a;
   color: #000;
   transition: .3s all;
+}
+
+.newsletter {
+  grid-area: newsletter;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5% 7%;
+  position: relative;
+}
+
+.newsletter::before {
+  content: "";
+  width: 100%;
+  height: 50rem;
+  position: absolute;
+  background-image: url(../images/bg-newslatter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.newsletter .newsletter-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.newsletter .newsletter-text {
+  width: 50%;
+  text-align: justify;
+  padding: 10rem;
+}
+
+.newsletter .newsletter-sign-up {
+  display: flex;
+  gap: 1.5rem;
+  width: 50%;
+  padding: 5rem;
+}
+
+.newsletter .newsletter-text h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #053e8b;
+  margin-left: 18%;
+  margin-bottom: 2rem;
+}
+
+.newsletter .newsletter-sign-up input {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+
+.newsletter .newsletter-sign-up .btnSignUp {
+  background-color: #053e8b;
+  color: #e5e6e8;
+  width: 30%;
+}
+
+.newsletter .newsletter-sign-up .btnSignUp:hover {
+    background-color: #fad51a;
+    color: #000;
+    transition: .3s all;
 }
 
 .footer {
