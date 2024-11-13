@@ -143,7 +143,7 @@ body {
 }
 
 .services .image.right {
-  background: url(../images/bg-services-1.jpg) center center no-repeat;
+  background: url(../images/bg-services-1.jpg) left left no-repeat;
   background-size: cover;
 }
 
@@ -158,14 +158,34 @@ body {
 }
 
 @media (max-width: 425px) {
+
   .services .item {
     text-align: center;
+    padding: 10%;
+  }
+
+  .services .item h3 {
+    text-align: left;
+  }
+
+  .services .item p {
+    font-size: 2.2rem;
+    text-align: justify;
   }
 
   .services {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    padding: 0;
+    text-align: center;
   }
+
+  .services .image.right,
+  .services .image.left,
+  .services .image.right-design{
+    display: none;
+  }
+
 }
 
 .projects {
@@ -304,28 +324,26 @@ body {
 }
 
 @media (max-width: 425px) {
+  .about {
+    text-align: center;
+    padding: 5% 5% 0;
+  }
+
   .about .quem-somos,
   .about .valores.valores-content {
     background-image: none;
   }
 
-  .about .quem-somos div {
-    text-align: justify;
-    width: 200px;
-  }
-
   .group-content {
     flex-direction: column;
-    text-align: justify;
-    width: 200px;
   }
 
-  .about .item {
-    text-align: center;
+  .about .valores.valores-content {
+    padding-bottom: 3rem;
   }
 
-  .about .quem-somos {
-
+  .about .valores.valores-content .content{
+    flex-direction: column;
   }
 
 }
@@ -418,6 +436,21 @@ body {
   text-align: justify;
 }
 
+@media (max-width: 425px) {
+  .suport {
+    background-image: none;
+  }
+
+  .suport h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .suport .section-suport-item.suport-none {
+    display: none;
+  }
+}
+
 .contact {
     grid-area: contact;
     display: grid;
@@ -487,6 +520,12 @@ body {
   background-color: #fad51a;
   color: #000;
   transition: .3s all;
+}
+
+@media (max-width: 425px) {
+  .contact::before {
+    background-image: none;
+  }
 }
 
 .newsletter {
@@ -559,9 +598,39 @@ body {
     transition: .3s all;
 }
 
+@media (max-width: 425px) {
+  .newsletter .newsletter-content {
+    flex-direction: column;
+  }
+
+  .newsletter .newsletter-text {
+    padding: 5%;
+  }
+
+  .newsletter .newsletter-text h2 {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .newsletter::before {
+    display: none;
+  }
+
+  .newsletter .newsletter-text,
+  .newsletter .newsletter-sign-up {
+    width: 100%;
+  }
+
+}
+
 .our-team {
   grid-area: our-team;
-  margin: 10% 7%;
+  background-image: url(../images/bg-our-team.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 7%;
+  padding: 10% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -571,19 +640,10 @@ body {
 
 .our-team > h2 {
   font-family: "League Spartan", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 4rem;
   margin-bottom: 4rem;
   color: #053e8b;
-}
-.our-team::before {
-  content: "";
-  width: 100%;
-  height: 50rem;
-  position: absolute;
-  background-image: url(../images/bg-our-team.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .our-team .our-team-content {
@@ -603,6 +663,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 
 
@@ -616,16 +677,31 @@ body {
 .our-team .our-team-content .section-member .member-team .description-member h2 {
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  color: #D9B42F;
 }
 
 .our-team .our-team-content .section-member .member-team .description-member h3 {
   font-size: 1.8rem;
+  font-weight: 400;
+  color: #053e8b;
 }
 
 .our-team .our-team-content .section-member .member-team .description-member .links-member ul {
   display: flex;
   gap: 3rem;
+}
+
+.our-team .our-team-content .section-member .member-team .description-member .links-member ul li a {
+  border-radius: 50%;
+  border: 1px solid;
+  padding: .8rem;
+  color: #053e8b;
+}
+
+.our-team .our-team-content .section-member .member-team .description-member .links-member ul li a:hover {
+  color: #D9B42F;
+  transition: color .3s;
 }
 
 .our-team .our-team-content .section-member .member-team .photo-4 {
@@ -668,6 +744,17 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 425px) {
+  .our-team {
+    padding: 10% 5%;
+    background-image: none;
+  }
+
+  .our-team .our-team-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
 
 .footer {
   grid-area: footer;
@@ -729,3 +816,12 @@ body {
   color: #f0c808;
 }
 
+@media (max-width: 425px) {
+  .footer nav {
+    flex-direction: column;
+  }
+
+  .footer .social {
+    margin-top: 2rem;
+  }
+}
