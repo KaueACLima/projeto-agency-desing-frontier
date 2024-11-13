@@ -14,7 +14,8 @@ body {
     "contact contact contact contact"
     "newsletter newsletter newsletter newsletter"
     "our-team our-team our-team our-team"
-    "footer footer footer footer";
+    "footer footer footer footer"
+    "attribution attribution attribution attribution";
   grid-template-columns: repeat(4, 1fr);
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
@@ -134,7 +135,8 @@ body {
 }
 
 .services .item .btn-know-more {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   align-self: flex-start;
 }
 
@@ -143,7 +145,7 @@ body {
 }
 
 .services .image.right {
-  background: url(../images/bg-services-1.jpg) left left no-repeat;
+  background: url(../images/bg-services-1.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -824,4 +826,15 @@ body {
   .footer .social {
     margin-top: 2rem;
   }
+}
+
+.attribution {
+  grid-area: attribution;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }

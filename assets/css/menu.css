@@ -202,6 +202,9 @@ a.es::before {
 
   .header input:checked ~ ul {
     display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .header nav {
@@ -221,6 +224,10 @@ a.es::before {
     text-align: center;
     padding: 20px;
     display: block;
+  }
+
+  .header .language {
+    margin-left: 0;
   }
 }
 

@@ -5,16 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- FAVICON -->
   <link rel="shortcut icon" href="./assets/images/fav-df.png" type="image/x-icon">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -28,7 +20,7 @@
   <link rel="stylesheet" href="./assets/css/variables.css" />
   <link rel="stylesheet" href="./assets/css/menu.css" />
   <link rel="stylesheet" href="./assets/css/index.css" />
-  <title>Agencia | Frontera del diseño</title>
+  <title>Agencia | Design Frontier</title>
 </head>
 
 <body>
@@ -51,15 +43,20 @@
           <li><a href="#services">Servicios</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#suport">Apoyo</a></li>
-          <li><a href="#about">Acerca de</a></li>
+          <li class="drop-hover"><a href="#about">Acerca de <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="drop">
+              <a class="a-drop" href="#ourTeam">Nossa equipe</a>
+            </ul>
+          </li>
           <li><a href="#contact">Contacto</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
           <div class="language">
             <div class="language-selected">
               <a href=""><i class="fa-solid fa-language" id="icon-translate"></i></a>
             </div>
             <ul>
-              <li><a class="en" href="page-es.html">English</a></li>
-              <li><a class="br" href="index.html">Português</a></li>
+              <li><a class="en" href="page-en.html">English</a></li>
+              <li><a class="es" href="page-es.html">Espanõl</a></li>
             </ul>
           </div>
       </nav>
@@ -69,36 +66,58 @@
   </section>
   <section class="services" id="services">
     <div class="item">
-      <h3>Desarrollo Web</h3>
+      <h3>Web</h3>
       <p>
-        En Design Frontier, desarrollamos sitios web que van más allá de lo visual: son rápidos, intuitivos y optimizados para una experiencia atractiva y funcional. Nuestro equipo aplica las mejores prácticas de desarrollo front-end y back-end, utilizando las últimas tecnologías para garantizar que cada detalle funcione a la perfección. Desde sitios web institucionales hasta plataformas más complejas, creamos soluciones personalizadas que resaltan la presencia en línea de nuestros clientes e impulsan el éxito digital de sus negocios.
+        En Design Frontier, desarrollamos sitios web que van más allá de lo visual: son rápidos, intuitivos y
+        optimizados para un
+        experiencia atractiva y funcional. Nuestro equipo aplica las mejores prácticas de desarrollo front-end y
+        back-end, utilizando las últimas tecnologías para garantizar que cada detalle funcione a la perfección. Desde
+        desde sitios web institucionales hasta plataformas más complejas, creamos soluciones personalizadas que resaltan
+        la presencia
+        en línea para nuestros clientes e impulsar el éxito digital de sus negocios.
       </p>
-      <a href="#" class="btn-know-more">Saiba más</a>
+      <a href="#" class="btn-know-more">Saiba mais</a>
     </div>
     <div class="image right"></div>
     <div class="image left"></div>
     <div class="item">
       <h3>Landing page</h3>
       <p>
-        Una página de destino bien diseñada marca la diferencia en las campañas de marketing digital. En Design Frontier, creamos páginas de destino optimizadas para la conversión, diseñadas para captar la atención de sus visitantes y convertirlos en clientes. Trabajamos con diseño estratégico, llamados a la acción claros y técnicas de SEO para maximizar el impacto. Nuestras páginas de destino son ideales para lanzar productos, captar clientes potenciales y aumentar la visibilidad de su marca de forma rápida y eficaz.
+        Una página de destino bien diseñada marca la diferencia en las campañas de marketing digital. En Frontera del
+        Diseño,
+        Creamos páginas de destino optimizadas para la conversión diseñadas para captar la atención de los visitantes y
+        transformarlos.
+        en clientes. Trabajamos con diseño estratégico, call to action claros y técnicas SEO para maximizar el
+        impacto. Nuestras páginas de destino son ideales para lanzar productos, captar clientes potenciales y aumentar
+        la visibilidad de su empresa.
+        marca de forma rápida y eficaz.
       </p>
-      <a href="#" class="btn-know-more">Saiba más</a>
+      <a href="#" class="btn-know-more">Saiba mais</a>
     </div>
     <div class="item">
       <h3>Design</h3>
       <p>
-        El diseño de un sitio web es la tarjeta de presentación digital de una marca. En Design Frontier desarrollamos diseños únicos y atractivos que reflejan la esencia y valores de cada cliente. Con un enfoque centrado en la experiencia de usuario (UX) y la interfaz (UI), creamos diseños responsivos y modernos que se adaptan a cualquier dispositivo, garantizando una navegación agradable e intuitiva. Transformamos ideas en imágenes impactantes que fortalecen la identidad de marca y promueven resultados.
+        El diseño de un sitio web es la tarjeta de presentación digital de una marca. En Design Frontier, desarrollamos
+        diseños.
+        Productos exclusivos y atractivos que reflejan la esencia y valores de cada cliente. Con un enfoque centrado en
+        experiencia de usuario (UX) e interfaz (UI), creamos diseños responsivos y modernos que se adaptan a cualquier
+        dispositivo, garantizando una navegación agradable e intuitiva. Transformamos ideas en imágenes impactantes que
+        fortalecer la identidad de marca y promover resultados.
       </p>
-      <a href="#" class="btn-know-more">Saiba más</a>
+      <a href="#" class="btn-know-more">Saiba mais</a>
     </div>
     <div class="image right-design"></div>
   </section>
   <section class="about" id="about">
     <div class="quem-somos">
       <i class="fa-solid fa-users-line dark-blue"></i>
-      <h3>Sobre nosotros</h3>
+      <h3>Quienes somos</h3>
       <p>
-        Fundada en 2023, Design Frontier Agency se especializa en crear experiencias digitales excepcionales para nuestros clientes. Centrándonos en el diseño innovador y las soluciones creativas, convertimos las ideas en resultados.
+        Fundada en 2024, Agência Frontier nació de la pasión por conectar marcas, diseño, web y páginas de destino con
+        sus clientes.
+        público de forma integrada, innovadora y eficaz. Con un equipo de profesionales apasionados y experimentados,
+        tenemos
+        Nos dedicamos a ofrecer soluciones creativas que transforman los desafíos del mercado en oportunidades reales.
       </p>
     </div>
     <div class="group-content">
@@ -106,14 +125,21 @@
         <i class="fa-solid fa-bullseye"></i>
         <h3>Misión</h3>
         <p>
-          Nuestra misión es impulsar el crecimiento de nuestros clientes a través de estrategias de marketing personalizadas. marketing, diseño y comunicación digital. Buscamos ser socios estratégicos, entendiendo profundamente las necesidades de cada cliente para entregar resultados que superen las expectativas.
+          Nuestra misión es impulsar el crecimiento de nuestros clientes a través de estrategias de marketing
+          personalizadas.
+          marketing digital, diseño y comunicación. Buscamos ser socios estratégicos, entendiendo profundamente la
+          necesidades
+          de cada cliente para entregar resultados que superen las expectativas.
         </p>
       </div>
       <div class="visao">
         <i class="fa-duotone fa-solid fa-eye "></i>
-        <h3>Visión</h3>
+        <h3>Visão</h3>
         <p>
-          Creemos en un futuro donde las marcas y los consumidores se conecten de una manera auténtica y significativa. Nuestra visión es servir como referente en innovación y excelencia en el mercado del marketing y la comunicación, impactando positivamente el mundo empresarial.
+          Creemos en un futuro donde las marcas y los consumidores se conecten de una manera auténtica y significativa.
+          Nuestro
+          visión es ser referente en innovación y excelencia en el mercado del marketing y la comunicación, impactando
+          positivamente el mundo empresarial.
         </p>
       </div>
     </div>
@@ -122,10 +148,10 @@
       <i class="fa-solid fa-hand-holding-dollar dark-blue"></i>
       <h3>Valores</h3>
       <div class="content">
-        <p><span>Innovación</span>Siempre estamos buscando nuevas ideas y enfoques creativos.</p>
-        <p><span>Integridad</span>Actuamos con transparencia y ética en todas nuestras relaciones.</p>
-        <p><span>Colaboración</span>Valoramos el trabajo en equipo junto con la construcción de asociaciones sólidas.</p>
-        <p><span>Compromiso</span>Estamos comprometidos con el éxito de nuestros clientes.</p>
+        <p><span>Innovación </span>Siempre estamos buscando nuevas ideas y enfoques creativos.</p>
+        <p><span>Integridad </span>Actuamos con transparencia y ética en todas nuestras relaciones.</p>
+        <p><span>Colaboración </span>Valoramos el trabajo en equipo junto con la construcción de alianzas sólidas.</p>
+        <p><span>Compromiso </span>Estamos comprometidos con el éxito de nuestros clientes.</p>
       </div>
   </section>
   <section class="projects" id="projects">
@@ -152,8 +178,9 @@
         </a>
       </div>
   </section>
+  </div>
   <section class="suport" id="suport">
-    <h2>FAQ</h2>
+    <h2>Preguntas frecuentes</h2>
     <div class="suport-container">
       <div class="section-suport-item">
         <div class="suport-item">
@@ -168,11 +195,10 @@
           <div class="suport-descricao">
             <p>
               Agência Design Frontier es una empresa especializada en diseño gráfico, branding y desarrollo.
-              digital.
-              Nuestro objetivo es siempre complacer al cliente y brindarle una variedad de opciones.
-              proyecto.
-              Y ayudar a las marcas a destacarse en el mercado a través de soluciones creativas e innovadoras.
-
+              digital. Nuestro objetivo es siempre complacer al cliente y brindarle una variedad de opciones para
+              elegir.
+              el
+              proyecto. Y ayudar a las marcas a destacarse en el mercado a través de soluciones creativas e innovadoras.
             </p>
           </div>
         </div>
@@ -188,13 +214,12 @@
           <div class="suport-descricao">
             <p>
               Ofrecemos una amplia gama de servicios que incluyen:
-              xxxx
-              Sugerencia:(Diseño Gráfico
-              Marca e identidad visual
-              Desarrollo de sitios web
-              Diseño UI/UX
-              Mercadotecnia Digital
-              Consultoría de diseño)
+              <span>Diseño Gráfico</span>
+              <span>Marca e identidad visual</span>
+              <span>Desarrollo de sitios web</span>
+              <span>Diseño UI/UX</span>
+              <span>Marketing Digital</span>
+              <span>Consultoría de diseño</span>
             </p>
           </div>
         </div>
@@ -210,11 +235,13 @@
           <div class="suport-descricao">
             <p>
               Nuestro proceso es colaborativo y se divide en etapas:
-              Briefing: Entendemos sus necesidades y objetivos.
-              Investigación: Analizamos el mercado y la competencia.
-              Creación: Desarrollamos conceptos y prototipos.
-              Revisiones: Trabajamos juntos en los cambios necesarios.
-              Entrega: Finalizamos y entregamos los materiales.
+            <ul>
+              <li><span>Instrucciones:</span> Entendemos sus necesidades y objetivos.</li>
+              <li><span>Buscar:</span> Analisamos o mercado e a concorrência.</li>
+              <li><span>Creación:</span> Desarrollamos conceptos y prototipos.</li>
+              <li><span>Reseñas:</span> Trabajamos juntos en los cambios necesarios.</li>
+              <li><span>Entrega:</span> Finalizamos y entregamos los materialesEntrega.</li>
+            </ul>
             </p>
           </div>
         </div>
@@ -229,16 +256,16 @@
           </button>
           <div class="suport-descricao">
             <p>
-              El tiempo de finalización puede variar dependiendo de la complejidad del proyecto. En general, los proyectos más pequeños pueden
-              ser
-              completarse en X a X semanas, mientras que los proyectos más complejos pueden tardar de X a X días/semanas/meses.
+              El tiempo de finalización puede variar dependiendo de la complejidad del proyecto. En general, los
+              proyectos más pequeños pueden
+              completarse en 3 a 7 semanas, mientras que los proyectos más complejos pueden tardar de 4 a 9 semanas. Si
               Si necesitas una fecha exacta, ponte en contacto y recibirás una respuesta.
             </p>
           </div>
         </div>
         <div class="suport-item">
           <button id="suport-btn" class="suport-btn">
-            ¿Cuál es el tiempo promedio para completar un proyecto?
+            ¿Cómo puedo solicitar una cotización?
 
             <div class="icons">
               <img class="plus-icon btn-icon" src="./assets/images/icon-plus.svg" alt="Icone de mais" />
@@ -247,15 +274,14 @@
           </button>
           <div class="suport-descricao">
             <p>
-              El tiempo de finalización puede variar dependiendo de la complejidad del proyecto. En general, los proyectos más pequeños pueden
-              ser
-              completarse en X a X semanas, mientras que los proyectos más complejos pueden tardar de X a X días/semanas/meses.
-              Si necesitas una fecha exacta, ponte en contacto y recibirás una respuesta.
+              Para solicitar un presupuesto, simplemente complete el formulario en nuestro sitio web o contáctenos por
+              correo electrónico
+              agenciadesingfrontier@gmail.com. Nuestro equipo revisará su solicitud y le responderemos rápidamente.
             </p>
           </div>
         </div>
       </div>
-      <div class="section-suport-item">
+      <div class="section-suport-item suport-none">
         <div class="suport-item">
           <button id="suport-btn" class="suport-btn">
             ¿Puedo seguir el progreso de mi proyecto?
@@ -267,7 +293,8 @@
           </button>
           <div class="suport-descricao">
             <p>
-              ¡Sí! Mantenemos una comunicación constante durante todo el proceso y recibirás actualizaciones periódicas sobre el progreso de tu proyecto.
+              ¡Sí! Mantenemos una comunicación constante durante todo el proceso y recibirás actualizaciones periódicas.
+              sobre el progreso de su proyecto.
             </p>
           </div>
         </div>
@@ -282,7 +309,9 @@
           </button>
           <div class="suport-descricao">
             <p>
-              ¡Sí! Atendemos a clientes en una variedad de industrias, incluida la tecnología, la moda, la atención médica, la educación y más. Cada proyecto se adapta a las necesidades específicas del cliente.
+              ¡Sí! Atendemos a clientes en una variedad de industrias, incluida la tecnología, la moda, la atención
+              médica, la educación y más.
+              Cada proyecto se adapta a las necesidades específicas del cliente.
             </p>
           </div>
         </div>
@@ -297,7 +326,9 @@
           </button>
           <div class="suport-descricao">
             <p>
-              Sí, ofrecemos soporte posterior al proyecto para garantizar que todo funcione como se espera. Nuestro equipo está disponible para ayudar con cualquier pregunta o ajuste necesario.
+              Sí, ofrecemos soporte posterior al proyecto para garantizar que todo funcione como se espera. Nuestro
+              equipo es
+              disponible para ayudar con cualquier pregunta o ajuste necesario.
             </p>
           </div>
         </div>
@@ -312,7 +343,9 @@
           </button>
           <div class="suport-descricao">
             <p>
-              ¡Sí! Trabajamos en proyectos de todos los tamaños, desde pequeñas piezas gráficas hasta campañas completas de branding. ¡Cada proyecto es importante para nosotros!
+              ¡Sí! Trabajamos con proyectos de todos los tamaños, desde pequeñas piezas gráficas hasta campañas
+              publicitarias.
+              marca completa. ¡Cada proyecto es importante para nosotros!
             </p>
           </div>
         </div>
@@ -327,7 +360,8 @@
           </button>
           <div class="suport-descricao">
             <p>
-              La originalidad es una prioridad para nosotros. Realizamos investigaciones detalladas y creamos diseños personalizados, asegurando que cada proyecto sea único y alineado con la identidad de la marca.
+              La originalidad es una prioridad para nosotros. Realizamos investigaciones detalladas y creamos diseños.
+              personalizado, asegurando que cada proyecto sea único y alineado con la identidad de la marca.
             </p>
           </div>
         </div>
@@ -336,43 +370,107 @@
   </section>
   <section class="contact" id="contact">
     <div>
-      <h2>Contacta con nosotros</h2>
+      <h2>Contáctenos</h2>
       <p>Llene este formulario y nos comunicaremos con usted a la brevedad.</p>
-      <form action="form.php" method="get">
+      <form action="./assets/php/index.php" method="POST">
         <label for="inName"></label>
         <input type="text" name="nome" id="inName" placeholder="Nombre*" required autocomplete="off">
 
         <label for="inEmail"></label>
-        <input type="email" name="nome" id="inEmail" placeholder="E-mail*">
+        <input type="email" name="email" id="inEmail" placeholder="E-mail*" required autocomplete="off">
 
         <label for="inAssunto"></label>
-        <input type="email" name="email" id="inAssunto" placeholder="Sujeto*">
+        <input type="text" name="assunto" id="inAssunto" placeholder="Sujeto*" required autocomplete="off">
 
         <label for="inComentario"></label>
-        <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="
-        Mensaje*"></textarea>
+        <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="Mensaje*"></textarea>
         <input class="btnEnviar" type="submit" value="Para enviar">
       </form>
     </div>
   </section>
   <section class="newsletter" id="newsletter">
-    <h2>Newsletter</h2>
     <div class="newsletter-content">
       <div class="newsletter-text">
+        <h2>Newsletter <i class="fa-regular fa-newspaper"></i></h2>
         <p>
-          Regístrate y mantente al día de nuestros proyectos y promociones. Prometemos actualizarlo solo de vez en cuando.
+          Regístrate y mantente al día de nuestros proyectos y promociones. Prometemos actualizarlo solo de vez en
+          cuando.
         </p>
       </div>
       <div class="newsletter-sign-up">
         <label for="inEmailSignUp"></label>
-        <input type="text" name="emailSignUp" id="inEmailSignUp" autocomplete="off">
-        <input type="submit" value="Para enviar">
+        <input type="text" name="emailSignUp" id="inEmailSignUp" placeholder="Digite seu e-mail" autocomplete="off">
+        <input class="btnSignUp" type="submit" value="Para enviar">
       </div>
     </div>
   </section>
-  <section class="our-team" id="ourTeam"></section>
+  <section class="our-team" id="ourTeam">
+    <h2>Nuestro equipo</h2>
+    <div class="our-team-content">
+      <div class="section-member">
+        <div class="member-team">
+          <div class="photo-member photo-4"></div>
+          <div class="description-member">
+            <h2>Gabriel Almeida</h2>
+            <h3>Desenvolvedor Back-end</h3>
+            <div class="links-member">
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="member-team">
+          <div class="photo-member kaue"></div>
+          <div class="description-member">
+            <h2>Kauê Lima</h>
+              <h3>Desenvolvedor Front-end</h3>
+              <div class="links-member">
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-member">
+        <div class="member-team">
+          <div class="photo-member marylin"></div>
+          <div class="description-member">
+            <h2>Marylin Gabriela</h2>
+            <h3>Gestora de Marketing</h3>
+            <div class="links-member">
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="member-team">
+          <div class="photo-member raissa"></div>
+          <div class="description-member">
+            <h2>Raissa Victoria</h2>
+            <h3>Gestora do RH</h3>
+            <div class="links-member">
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
-    <h4>Desing Frontier</h4>
+    <h4>Design Frontier</h4>
     <nav>
       <ul>
         <li><a href="#services">Servicios</a></li>
@@ -385,35 +483,39 @@
         <li><a href="#services">Quienes somos</a></li>
         <li><a href="#projects">Misión</a></li>
         <li><a href="#suport">Visión</a></li>
-        <li><a href="#about">Valor</a></li>
+        <li><a href="#about">Valores</a></li>
       </ul>
       <ul>
-        <li><a href="#services">Trabaja con nosotros</a></li>
-        <li><a href="#projects">Suscríbete a nuestro boletín</a></li>
-        <li><a href="#suport">Nuestro equipo</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="#ourTeam">Nuestro equipo</a></li>
       </ul>
       <ul>
-        <li><a href="#services">São Paulo</a></li>
-        <li><a href="#projects">Av. da Inovação</a></li>
-        <li><a href="#suport">01010-010</a></li>
-        <li><a href="#about">(11) 3456-7890</a></li>
+        <li><a href="#">São Paulo</a></li>
+        <li><a href="#">Av. da Inovação</a></li>
+        <li><a href="#">01010-010</a></li>
+        <li><a href="#">(11) 3456-7890</a></li>
       </ul>
     </nav>
     <div class="social">
-      <a href="">
-        <i class="fab fa-facebook-square"></i>
+      <a href="www.youtube.com/@DesingFrontierAgência" target="_blank">
+        <i class="fa-brands fa-youtube"></i></i>
       </a>
-      <a href="">
+      <a href="https://www.instagram.com/desing_frontier/profilecard/?igsh=MXJ2MTNlczZlZ3B3dw==" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="">
         <i class="fab fa-twitter-square"></i>
       </a>
       <a href="">
-        <i class="fab fa-pinterest"></i>
+        <i class="fa-brands fa-linkedin-in"></i></i>
       </a>
     </div>
   </footer>
+  <div class="attribution">
+    Coded by <a href="#">Kauê Lima 🍀</a>.
+    My <a href="https://kaueaclima.github.io/projeto-portifolio/" target="_blank">Portfólio</a>.
+  </div>
   <script src="./assets/js/index.js"></script>
 </body>
 
