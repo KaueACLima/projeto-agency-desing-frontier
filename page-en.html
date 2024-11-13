@@ -5,22 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="shortcut icon" href="./assets/images/fav-df.png" type="image/x-icon">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -28,7 +16,7 @@
   <link rel="stylesheet" href="./assets/css/variables.css" />
   <link rel="stylesheet" href="./assets/css/menu.css" />
   <link rel="stylesheet" href="./assets/css/index.css" />
-  <title>Agência | Desing Frontier</title>
+  <title>Agency | Desing Frontier</title>
 </head>
 
 <body>
@@ -51,15 +39,20 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#suport">Support</a></li>
-          <li><a href="#about">About</a></li>
+          <li class="drop-hover"><a href="#about">About <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="drop">
+                <a class="a-drop" href="ourTeam">Our team</a>
+            </ul>
+          </li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
           <div class="language">
             <div class="language-selected">
               <a href=""><i class="fa-solid fa-language" id="icon-translate"></i></a>
             </div>
             <ul>
+              <li><a class="en" href="page-en.html">English</a></li>
               <li><a class="es" href="page-es.html">Espanõl</a></li>
-              <li><a class="br" href="index.html">Português</a></li>
             </ul>
           </div>
       </nav>
@@ -69,25 +62,37 @@
   </section>
   <section class="services" id="services">
     <div class="item">
-      <h3>Web Development</h3>
+      <h3>Web</h3>
       <p>
-        At Design Frontier, we develop websites that go beyond visuals: they are fast, intuitive and optimized for an engaging and functional experience. Our team applies front-end and back-end development best practices, using the latest technologies to ensure every detail works perfectly. From institutional websites to more complex platforms, we create customized solutions that highlight our clients' online presence and drive the digital success of their businesses.
+        At Design Frontier, we develop websites that go beyond the visual: they are fast, intuitive and optimized for a
+        engaging and functional experience. Our team applies the best front-end development practices and
+        back-end, using the latest technologies to ensure every detail works perfectly. Since
+        institutional websites to more complex platforms, we create personalized solutions that highlight the presence
+        online for our customers and drive the digital success of their businesses.
       </p>
-      <a href="#" class="btn-know-more">Find out more</a>
+      <a href="#" class="btn-know-more">Saiba mais</a>
     </div>
     <div class="image right"></div>
     <div class="image left"></div>
     <div class="item">
       <h3>Landing page</h3>
       <p>
-        A well-designed landing page makes all the difference in digital marketing campaigns. At Design Frontier, we create conversion-optimized landing pages designed to catch your visitors' attention and turn them into customers. We work with strategic design, clear calls to action and SEO techniques to maximize impact. Our landing pages are ideal for launching products, capturing leads and increasing your brand's visibility quickly and effectively.
+        A well-designed landing page makes all the difference in digital marketing campaigns. At Design Frontier,
+        we create landing pages optimized for conversion, designed to capture visitors’ attention and transform them
+        in customers. We work with strategic design, clear calls to action and SEO techniques to maximize the
+        impact. Our landing pages are ideal for launching products, capturing leads and increasing your company’s visibility.
+        brand quickly and effectively.
       </p>
       <a href="#" class="btn-know-more">Find out more</a>
     </div>
     <div class="item">
       <h3>Design</h3>
       <p>
-        We design visual identities and graphic materials that strengthen your brand.
+        A website’s design is a brand’s digital business card. At Design Frontier, we develop layouts
+        exclusive and attractive products that reflect the essence and values ​​of each client. With an approach focused on
+        user experience (UX) and interface (UI), we create responsive and modern designs that adapt to any
+        device, ensuring pleasant and intuitive navigation. We transform ideas into impactful visuals that
+        strengthen brand identity and promote results.
       </p>
       <a href="#" class="btn-know-more">Find out more</a>
     </div>
@@ -95,11 +100,12 @@
   </section>
   <section class="about" id="about">
     <div class="quem-somos">
-      <!-- <div class="quem-somos-img-top"></div> -->
       <i class="fa-solid fa-users-line dark-blue"></i>
       <h3>About Us</h3>
       <p>
-        Founded in 2023, Design Frontier Agency specializes in creating exceptional digital experiences for our clients. With a focus on innovative design and creative solutions, we turn ideas into results.
+        Founded in 2024, Agência Frontier was born from the passion for connecting brands, design, web and landing pages to their customers.
+        public in an integrated, innovative and effective way. With a team of passionate and experienced professionals, we have
+        We are dedicated to offering creative solutions that transform market challenges into real opportunities.
       </p>
     </div>
     <div class="group-content">
@@ -153,6 +159,7 @@
         </a>
       </div>
   </section>
+  </div>
   <section class="suport" id="suport">
     <h2>FAQ</h2>
     <div class="suport-container">
@@ -187,14 +194,13 @@
           </button>
           <div class="suport-descricao">
             <p>
-              We offer a wide range of services including:
-              xxxxx
-              Suggestion:(Graphic Design
-              Branding and Visual Identity
-              Website Development
-              UI/UX Design
-              Digital Marketing
-              Design Consulting)
+              Oferecemos uma ampla gama de serviços, incluindo:
+              <span>Graphic Design</span>
+              <span>Branding and Visual Identity</span>
+              <span>Website Development</span>
+              <span>Design de UI/UX</span>
+              <span>Digital Marketing</span>
+              <span>Design Consulting</span>
             </p>
           </div>
         </div>
@@ -210,11 +216,13 @@
           <div class="suport-descricao">
             <p>
               Our process is collaborative and divided into stages:
-              Briefing: We understand your needs and objectives.
-              Research: We analyze the market and competition.
-              Creation: We develop concepts and prototypes.
-              Revisions: We work together on necessary changes.
-              Delivery: We finalize and deliver the materials
+              <ul>
+                <li><span>Briefing:</span> We understand your needs and objectives.</li>
+                <li><span>Research:</span> We analyze the market and competition.</li>
+                <li><span>Creation:</span> We develop concepts and prototypes.</li>
+                <li><span>Revisions:</span> We work together on necessary changes.</li>
+                <li><span>Delivery:</span> We finalize and deliver the materials.</li>
+              </ul>
             </p>
           </div>
         </div>
@@ -231,14 +239,14 @@
             <p>
               Completion time may vary depending on the complexity of the project. In general, smaller projects can
               to be
-              completed in X to X weeks, while more complex projects can take X to X days/weeks/months.
+              completed in 3 to 7 weeks, while more complex projects can take 4 to 9 days/weeks/months.
               If you need an exact date, get in touch and you will receive a response.
             </p>
           </div>
         </div>
         <div class="suport-item">
           <button id="suport-btn" class="suport-btn">
-            What is the average time to complete a project?
+            Como posso solicitar um orçamento?
 
             <div class="icons">
               <img class="plus-icon btn-icon" src="./assets/images/icon-plus.svg" alt="Icone de mais" />
@@ -247,10 +255,8 @@
           </button>
           <div class="suport-descricao">
             <p>
-              Completion time may vary depending on the complexity of the project. In general, smaller projects can
-              to be
-              completed in X to X weeks, while more complex projects can take X to X days/weeks/months.
-              If you need an exact date, get in touch and you will receive a response.
+              To request a quote, simply fill out the form on our website or contact us via email
+              agencydesingfrontier@gmail.com. Our team will review your request and we will respond quickly.
             </p>
           </div>
         </div>
@@ -318,7 +324,7 @@
         </div>
         <div class="suport-item">
           <button id="suport-btn" class="suport-btn">
-            How do you guarantee the originality of your designs?
+            Como vocês garantem a originalidade dos designs?
 
             <div class="icons">
               <img class="plus-icon btn-icon" src="./assets/images/icon-plus.svg" alt="Icone de mais" />
@@ -338,7 +344,7 @@
     <div>
       <h2>Contact us</h2>
       <p>Fill out this form and we will contact you shortly.</p>
-      <form action="form.php" method="get">
+      <form action="./assets/php/index.php" method="POST">
         <label for="inName"></label>
         <input type="text" name="nome" id="inName" placeholder="Name*" required autocomplete="off">
 
@@ -350,10 +356,26 @@
 
         <label for="inComentario"></label>
         <textarea name="comentario" id="inComentario" cols="30" rows="10" placeholder="Message*"></textarea>
-        <input class="btnEnviar" type="submit" value="To send">
+        <input class="btnEnviar" type="submit" value="Enviar">
       </form>
     </div>
   </section>
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <h2>Newsletter <i class="fa-regular fa-newspaper"></i></h2>
+        <p>
+          Sign up and stay up to date with our projects and promotions. We promise to only update once in a while.
+        </p>
+      </div>
+      <div class="newsletter-sign-up">
+        <label for="inEmailSignUp"></label>
+        <input type="text" name="emailSignUp" id="inEmailSignUp" placeholder="Enter your email" autocomplete="off">
+        <input class="btnSignUp" type="submit" value="Enviar">
+      </div>
+    </div>
+  </section>
+  <section class="our-team" id="ourTeam"></section>
   <footer class="footer">
     <h4>Desing Frontier</h4>
     <nav>
@@ -372,14 +394,14 @@
       </ul>
       <ul>
         <li><a href="#services">Work with us</a></li>
-        <li><a href="#projects">Subscribe to our newsletter</a></li>
-        <li><a href="#suport">Our team</a></li>
+        <li><a href="#our-team">Our team</a></li>
+        <li><a href="#ourTeam">Newsletter</a></li>
       </ul>
       <ul>
         <li><a href="#services">São Paulo</a></li>
-        <li><a href="#projects">Av. xxxxx, xxxx - xx</a></li>
-        <li><a href="#suport">xxxxx-xxx</a></li>
-        <li><a href="#about">5511xxxxxxxxx</a></li>
+        <li><a href="#projects">Av. da Inovação</a></li>
+        <li><a href="#suport">01010-010</a></li>
+        <li><a href="#about">(11) 3456-7890</a></li>
       </ul>
     </nav>
     <div class="social">
