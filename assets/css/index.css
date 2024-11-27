@@ -62,8 +62,8 @@ body {
 
 .hero:after {
   content: "\f063";
-  font-weight: 900; 
-  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
   font-size: 50px;
   color: #053e8b;
   position: absolute;
@@ -126,6 +126,8 @@ body {
 .services .item p {
   font-weight: 400;
   font-size: 1.8rem;
+  text-align: justify;
+  word-break: break-word;
   margin: 30px 0;
 }
 
@@ -160,7 +162,6 @@ body {
 }
 
 @media (max-width: 425px) {
-
   .services .item {
     text-align: center;
     padding: 10%;
@@ -173,6 +174,7 @@ body {
   .services .item p {
     font-size: 2.2rem;
     text-align: justify;
+    hyphens: auto;
   }
 
   .services {
@@ -184,10 +186,9 @@ body {
 
   .services .image.right,
   .services .image.left,
-  .services .image.right-design{
+  .services .image.right-design {
     display: none;
   }
-
 }
 
 .projects {
@@ -223,7 +224,7 @@ body {
 }
 
 @media (max-width: 425px) {
-  .projects .group-projects{
+  .projects .group-projects {
     flex-direction: column;
   }
 }
@@ -232,14 +233,15 @@ body {
   grid-area: about;
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #e5e6e8; 
+  background-color: #e5e6e8;
   margin: 0 auto;
   padding: 5% 10% 0;
   gap: 6rem;
 }
 
 .about .quem-somos {
-  background-image: url(../images/bg-about-border-left.png), url(../images/bg-about-border-right.png);
+  background-image: url(../images/bg-about-border-left.png),
+    url(../images/bg-about-border-right.png);
   background-size: 32%;
   background-repeat: no-repeat;
   background-position: left, right;
@@ -277,7 +279,8 @@ body {
 }
 
 .valores.valores-content {
-  background-image: url(../images/bg-about-border-left-bottom.png), url(../images/bg-about-border-right-bottom.png);
+  background-image: url(../images/bg-about-border-left-bottom.png),
+    url(../images/bg-about-border-right-bottom.png);
   background-size: 32%;
   background-repeat: no-repeat;
   background-position: left, right;
@@ -305,13 +308,12 @@ body {
 
 .valores.valores-content p {
   padding: 2rem;
-  
 }
 
-.about .missao i, 
+.about .missao i,
 .about .visao i {
   font-size: 5rem;
-  color: #D9B42F;
+  color: #d9b42f;
 }
 
 .about .item .dark-blue {
@@ -344,16 +346,15 @@ body {
     padding-bottom: 3rem;
   }
 
-  .about .valores.valores-content .content{
+  .about .valores.valores-content .content {
     flex-direction: column;
   }
-
 }
 
 .suport {
   grid-area: suport;
   display: grid;
-  place-items: center; 
+  place-items: center;
   background-image: url(../images/bg-suport.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -387,7 +388,7 @@ body {
   position: relative;
 }
 
-.suport-item:nth-child(-n+4) {
+.suport-item:nth-child(-n + 4) {
   margin-bottom: 20px;
 }
 
@@ -421,7 +422,7 @@ body {
 .suport-descricao {
   position: absolute;
   top: 55px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   max-height: 0;
   font-size: 1.4rem;
   overflow: hidden;
@@ -454,25 +455,17 @@ body {
 }
 
 .contact {
-    grid-area: contact;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 7%;
-    padding: 5% 7%;
-    position: relative;
-}
-
-.contact::before {
-  content: "";
-  width: 100%;
-  height: 70rem;
-  position: absolute;
+  grid-area: contact;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 7%;
+  padding: 5% 7%;
+  position: relative;
   background-image: url(../images/bg-contact.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transform: rotate(180deg);
 }
 
 .contact h2 {
@@ -521,7 +514,7 @@ body {
 .contact .btnEnviar:hover {
   background-color: #fad51a;
   color: #000;
-  transition: .3s all;
+  transition: 0.3s all;
 }
 
 @media (max-width: 425px) {
@@ -538,13 +531,6 @@ body {
   gap: 2rem;
   margin: 5% 7%;
   position: relative;
-}
-
-.newsletter::before {
-  content: "";
-  width: 100%;
-  height: 50rem;
-  position: absolute;
   background-image: url(../images/bg-newslatter.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -585,7 +571,6 @@ body {
   width: 80%;
   padding: 1rem;
   border-radius: 1rem;
-
 }
 
 .newsletter .newsletter-sign-up .btnSignUp {
@@ -595,9 +580,9 @@ body {
 }
 
 .newsletter .newsletter-sign-up .btnSignUp:hover {
-    background-color: #fad51a;
-    color: #000;
-    transition: .3s all;
+  background-color: #fad51a;
+  color: #000;
+  transition: 0.3s all;
 }
 
 @media (max-width: 425px) {
@@ -622,7 +607,6 @@ body {
   .newsletter .newsletter-sign-up {
     width: 100%;
   }
-
 }
 
 .our-team {
@@ -637,7 +621,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .our-team > h2 {
@@ -668,42 +651,72 @@ body {
   gap: 2rem;
 }
 
-
-
 .our-team .our-team-content .section-member .member-team .description-member {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.our-team .our-team-content .section-member .member-team .description-member h2 {
+.our-team
+  .our-team-content
+  .section-member
+  .member-team
+  .description-member
+  h2 {
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
   font-size: 2.2rem;
-  color: #D9B42F;
+  color: #d9b42f;
 }
 
-.our-team .our-team-content .section-member .member-team .description-member h3 {
+.our-team
+  .our-team-content
+  .section-member
+  .member-team
+  .description-member
+  h3 {
   font-size: 1.8rem;
   font-weight: 400;
   color: #053e8b;
 }
 
-.our-team .our-team-content .section-member .member-team .description-member .links-member ul {
+.our-team
+  .our-team-content
+  .section-member
+  .member-team
+  .description-member
+  .links-member
+  ul {
   display: flex;
   gap: 3rem;
 }
 
-.our-team .our-team-content .section-member .member-team .description-member .links-member ul li a {
+.our-team
+  .our-team-content
+  .section-member
+  .member-team
+  .description-member
+  .links-member
+  ul
+  li
+  a {
   border-radius: 50%;
   border: 1px solid;
-  padding: .8rem;
+  padding: 0.8rem;
   color: #053e8b;
 }
 
-.our-team .our-team-content .section-member .member-team .description-member .links-member ul li a:hover {
-  color: #D9B42F;
-  transition: color .3s;
+.our-team
+  .our-team-content
+  .section-member
+  .member-team
+  .description-member
+  .links-member
+  ul
+  li
+  a:hover {
+  color: #d9b42f;
+  transition: color 0.3s;
 }
 
 .our-team .our-team-content .section-member .member-team .photo-4 {
