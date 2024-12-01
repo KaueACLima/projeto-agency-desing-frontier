@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="../images/fav-df.png" type="image/x-icon">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/to-buy.css" />
+  <title>Agência | Design Frontier</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-marca-container">
+        <a href="../../index.html">
+          <img src="../images/lg-df-montain.png" alt="Logo Desing Frontier">
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="menu-hamburguer" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+        <ul>
+          <li><a href="../../index.html#services">Serviços</a></li>
+          <li><a href="../../index.html#projects">Projetos</a></li>
+          <li><a href="../../index.html#suport">Suporte</a></li>
+          <li class="drop-hover"><a href="../../index.html#about">Sobre <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="drop">
+              <a class="a-drop" href="../../index.html#ourTeam">Nossa equipe</a>
+            </ul>
+          </li>
+          <li><a href="../../index.html#contact">Contato</a></li>
+          <li><a href="../../index.html#newsletter">Newsletter</a></li>
+          <div class="language">
+            <div class="language-selected">
+              <a href=""><i class="fa-solid fa-language" id="icon-translate"></i></a>
+            </div>
+            <ul>
+              <li><a class="en" href="./assets/pages/page-en.html">English</a></li>
+              <li><a class="es" href="./assets/pages/page-en.html">Espanõl</a></li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="services-selection" id="servicesSelection">
+    <section class="types-products">
+      <h1 class="title">Escolha um modelo pré-formatado</h1>
+      <ul class="product-list">
+        <li class="product selected" id="e-commerce" data-name="E-commerce" data-description="Websites de e-commerce são lojas virtuais projetadas para facilitar a venda de produtos e serviços online. Incluem catálogos organizados, opções de pagamento seguras e design voltado para conversão, tornando a experiência de compra simples e eficaz.">
+          <img src="../images/e-commerce.png" alt="E-commerce" />
+        </li>
+        <li class="product" id="portfolio" data-name="Portfólio Profissional"
+          data-description="Um site de portfólio é a vitrine digital de profissionais criativos, como designers, fotógrafos e desenvolvedores. É projetado para exibir trabalhos e conquistas de maneira visual e atrativa, reforçando a credibilidade e atraindo novas oportunidades.">
+          <img src="../images/portfolio.png" alt="Portfólio Profissional" />
+        </li>
+        <li class="product" id="blog" data-name="Blogs e Revistas Online"
+          data-description="Esses sites são voltados para a criação e distribuição de conteúdo, seja sobre moda, tecnologia, viagens ou qualquer outro tema. Com layouts pensados para leitura fluida e SEO, são ideais para quem deseja compartilhar ideias e engajar seu público.">
+          <img src="../images/blog.png" alt="Blogs e Revistas Online" />
+        </li>
+        <li class="product" id="websites-institucionais" data-name="Websites Institucionais"
+          data-description="Empresas e organizações utilizam websites institucionais para apresentar sua história, missão e serviços. São projetados para transmitir profissionalismo, confiabilidade e oferecer informações claras para clientes e parceiros.">
+          <img src="../images/websites-institucionais.png" alt="Websites Institucionais" />
+        </li>
+        <li class="product" id="educacao" data-name="Websites de Educação"
+          data-description="Voltados para cursos e treinamentos, esses sites incluem áreas para aulas, materiais de apoio e ferramentas de avaliação. São desenvolvidos para tornar o aprendizado acessível e interativo, ajudando instituições a expandirem seu alcance.">
+          <img src="../images/educacao.png" alt="Websites de Educação Online" />
+        </li>
+        <li class="product" id="sites-assinatura" data-name="Sites de Assinatura"
+          data-description="Oferecem conteúdos exclusivos, como cursos, revistas digitais ou streaming, mediante pagamento recorrente. Ideais para criadores de conteúdo e empresas que desejam monetizar materiais especializados, esses sites mantêm os usuários engajados com atualizações constantes.">
+          <img src="../images/sites-assinatura.png" alt="Sites de Reservas e Agendamento" />
+        </li>
+        <li class="product" id="site-ongs" data-name="Sites de Caridade ou ONGs"
+          data-description="Criados para organizações sem fins lucrativos, esses sites destacam causas sociais, projetos e formas de doação. Um design emocional e funcionalidades para voluntariado ou doações online fazem toda a diferença.">
+          <img src="../images/site-ongs.png" alt="Sites de Caridade ou ONGs" />
+        </li>
+        <li class="product" id="sites-corporativos" data-name="Sites Corporativos"
+          data-description="Representando empresas de diferentes setores, esses sites comunicam valores, missão e serviços. Incluem seções como Sobre Nós, Serviços, e Contato, sendo fundamentais para credibilidade e atração de clientes.">
+          <img src="../images/sites-corporativos.png" alt="Sites Corporativos" />
+        </li>
+        <li class="product" id="landing-pages" data-name="Landing Pages"
+        data-description="Focadas em conversão, as landing pages são páginas únicas criadas para campanhas de marketing específicas. Elas destacam ofertas ou produtos com mensagens claras, chamadas para ação impactantes e um design atraente, otimizados para gerar leads ou vendas.">
+        <img src="../images/landing-pages.png" alt="Landing Pages" />
+      </li>
+      </ul>
+    </section>
+    <section class="product-selected">
+      <img class="big-product" src="../../assets/images/e-commerce.png" alt="Produto Selecionado" />
+      <div class="product-info">
+        <h2 class="product-name" id="product-name">E-commerce</h2>
+        <p class="product-description" id="product-description"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h4>Design Frontier</h4>
+    <nav>
+      <ul>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#suport">Suporte</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <ul>
+        <li><a href="#services">Quem Somos</a></li>
+        <li><a href="#projects">Missão</a></li>
+        <li><a href="#suport">Visão</a></li>
+        <li><a href="#about">Valores</a></li>
+      </ul>
+      <ul>
+        <li><a href="#services">Tabalhe conosco</a></li>
+        <li><a href="#projects">Assine nossa newsletter</a></li>
+        <li><a href="#suport">Nossa equipe</a></li>
+      </ul>
+      <ul>
+        <li><a href="#services">São Paulo</a></li>
+        <li><a href="#projects">Av. da Inovação</a></li>
+        <li><a href="#suport">01010-010</a></li>
+        <li><a href="#about">(11) 3456-7890</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="www.youtube.com/@DesingFrontierAgência" target="_blank">
+        <i class="fa-brands fa-youtube"></i></i>
+      </a>
+      <a href="https://www.instagram.com/desing_frontier/profilecard/?igsh=MXJ2MTNlczZlZ3B3dw==" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="www.linkedin.com/in/desing-frontier-agência-18512033b">
+        <i class="fa-brands fa-linkedin-in"></i></i>
+      </a>
+    </div>
+  </footer>
+  <div class="attribution">
+    Coded by <a href="#">Kauê Lima 🍀</a>.
+    My <a href="https://kaueaclima.github.io/projeto-portifolio/" target="_blank">Portfólio</a>.
+  </div>
+  <script src="../js/change-support-button-states.js"></script>
+  <script src="../js/change-page-language.js"></script>
+  <script src="../js/select-product.js"></script>
+</body>
+
+</html>
