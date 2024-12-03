@@ -4,6 +4,7 @@ body {
     "header header header header"
     "types-products types-products types-products types-products"
     "product-selected product-selected product-selected product-selected"
+    "send-proposal send-proposal send-proposal send-proposal"
     "footer footer footer footer"
     "attribution attribution attribution attribution";
   grid-template-columns: 1fr;
@@ -15,13 +16,21 @@ body {
 
 .services-selection {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
   min-height: calc(100vh - 158px);
 }
 
-.services-selection .types-products {
+.services-selection .product-grade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.services-selection .product-grade .types-products {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +38,16 @@ body {
   gap: 25px;
 }
 
-.services-selection .product-list {
+.services-selection .product-grade .types-products .title {
+  /* letter-spacing: 4px; */
+  color: #053e8b;
+  font-weight: 500;
+  border-bottom: 2px solid #ffbd1b;
+  width: 100%;
+  text-align: center;
+}
+
+.services-selection .product-grade .types-products .product-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -37,54 +55,113 @@ body {
   padding: 12px 0;
 }
 
-
-.services-selection .types-products .title {
-  /* letter-spacing: 4px; */
-  color: #053e8b;
-  font-weight: 500;
-  border-bottom: 2px solid #ffbd1b;
-  width: 100%;
-  text-align: center;
-}
-
-.services-selection .product-list img {
+.services-selection .product-grade .types-products .product-list img {
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
 
-.services-selection .product-list img:hover {
+.services-selection .product-grade .types-products .product-list img:hover {
   box-shadow: 0px 0px 24px 5px #ffbd1b;
 }
 
-.product-selected {
+.services-selection .product-grade .product-selected {
   text-align: justify;
   max-height: 530px;
 }
+.services-selection .product-grade .product-selected .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
 
-.product-selected .big-product {
+.services-selection .product-grade .product-selected .big-product {
   width: 430px;
   height: 430px;
   margin-bottom: 15px;
 }
 
-.product-selected .product-name {
+.services-selection .product-grade .product-selected .product-name {
   color: #053e8b;
   border-bottom: 2px solid #ffbd1b;
   font-weight: 500;
   /* letter-spacing: 4px; */
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 25px;
 }
 
-.product-selected .product-description {
+.services-selection .product-grade .product-selected .product-description {
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
   width: 420px;
 }
 
-@media (max-width: 429px) {
-
+.services-selection .send-proposal {
+  grid-area: send-proposal;
+  position: relative;
+  padding: 10% 20%;
 }
+
+.services-selection .send-proposal::before {
+  content: "";
+  width: 100%; 
+  height: 100%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/bg-suport.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; 
+}
+
+.services-selection .send-proposal h1 {
+  color: #053e8b;
+  font-weight: 500;
+  border-bottom: 2px solid #ffbd1b;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services-selection .send-proposal form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 15px;
+}
+
+.services-selection .send-proposal form fieldset legend {
+  margin-bottom: 15px;
+}
+
+.services-selection .send-proposal form fieldset:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .services-selection .send-proposal form fieldset label {
+  display: block;
+} */
+
+/* .services-selection .send-proposal form fieldset label input:nth-child(3) {
+  display: block;
+  margin-bottom: 15px;
+} */
+
+
+/*
+.services-selection .send-proposal form fieldset label input{
+  display: inline-block;
+}
+
+
+.services-selection .send-proposal  label:nth-child(1) {
+  margin: 15px 0;
+} */
