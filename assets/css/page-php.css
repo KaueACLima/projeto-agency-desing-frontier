@@ -11,15 +11,39 @@ body{
   background-color: #e5e6e8;
 }
 
-h1 {
-  margin: 12px 0;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container h1, .container h1 + p {
   text-align: center;
 }
 
-p {
-  font-size: 16px;
-  font-weight: normal;
-  margin: 10px 0;
+.container::before {
+  content: "";
+  width: 100%; 
+  height: 100%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/bg-suport.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; 
+}
+
+.container .content-proposal {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 23rem;
 }
 
 

@@ -21,17 +21,22 @@
 ?>
 
 
-  <div>
-    <h1>Seu e-mail foi enviado com sucesso!</h1>
-    <p>Em até 24h seu e-mail será respondido. Nossa equipe agradece o seu feedback.</p>
+  <div class="container">
+    <div>
+      <h1>Seu e-mail foi enviado com sucesso!</h1>
+      <p>Em até 24h seu e-mail será respondido. Nossa equipe agradece o seu feedback.</p>
+    </div>
 
-    <h2>Corpo do email:</h2>
-    <p>Nome: ".$nome."</p><br>
-    <p>Nome: ".$email."</p><br>
-    <p>Nome: ".$assunto."</p><br>
-    <p>Nome: ".$comentario."</p><br>
-    <p>$cabecalho</p>
+    <div class="content-proposal">
+      <h2>Corpo do email:</h2>
+      <p><strong>Nome:</strong> <?= $nome ?></p>
+      <p><strong>Email:</strong> <?= $email ?></p>
+      <p><strong>Assunto:</strong> <?= $assunto ?></p>
+      <p><strong>Comentário:</strong> <?= $comentario ?></p>
+      <p><strong>Informações de envio:</strong> <?= $cabecalho ?></p>
+    </div>
   </div>
+  <script src="../js/resize-page.js"></script>
 </body>
 
 </html>

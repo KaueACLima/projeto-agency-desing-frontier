@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="../images/fav-df.png" type="image/x-icon">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/to-buy.css" />
+  <title>Agencia | Design Frontier</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-marca-container">
+        <a href="../../index.html">
+          <img src="../images/lg-df-montain.png" alt="Logotipo de Design Frontier">
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="menu-hamburguer" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+        <ul>
+          <li><a href="../../index.html#services">Servicios</a></li>
+          <li><a href="../../index.html#projects">Proyectos</a></li>
+          <li><a href="../../index.html#suport">Soporte</a></li>
+          <li class="drop-hover"><a href="../../index.html#about">Sobre <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="drop">
+              <a class="a-drop" href="../../index.html#ourTeam">Nuestro equipo</a>
+            </ul>
+          </li>
+          <li><a href="../../index.html#contact">Contacto</a></li>
+          <li><a href="../../index.html#newsletter">Boletín informativo</a></li>
+          <div class="language">
+            <div class="language-selected">
+              <a href=""><i class="fa-solid fa-language" id="icon-translate"></i></a>
+            </div>
+            <ul>
+              <li><a class="br" href="./page-to-buy.html">Portugues</a></li>
+              <li><a class="en" href="./page-to-buy-en.html">English</a></li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+  </header>
+  <main class="services-selection" id="servicesSelection">
+    <section class="product-grade">
+      <article class="types-products">
+        <h1 class="title">Elige un modelo preformateado</h1>
+        <ul class="product-list">
+          <li class="product selected" id="e-commerce" data-name="E-commerce"
+            data-description="Los sitios web de comercio electrónico son tiendas en línea diseñadas para facilitar la venta de productos y servicios. Incluyen catálogos organizados, opciones de pago seguras y diseño centrado en la conversión, haciendo que la experiencia de compra sea sencilla y efectiva.">
+            <img src="../images/e-commerce.png" alt="E-commerce" />
+          </li>
+          <li class="product" id="portfolio" data-name="Portafolio profesional"
+            data-description="Un sitio web de portafolio es la vitrina digital para profesionales creativos como diseñadores, fotógrafos y desarrolladores. Está diseñado para mostrar trabajos y logros de manera visual y atractiva, reforzando la credibilidad y atrayendo nuevas oportunidades.">
+            <img src="../images/portfolio.png" alt="Portafolio profesional" />
+          </li>
+          <li class="product" id="blog" data-name="Blogs y revistas en línea"
+            data-description="Estos sitios web están dedicados a crear y compartir contenido, ya sea sobre moda, tecnología, viajes o cualquier otro tema. Con diseños optimizados para una lectura fluida y SEO, son ideales para quienes buscan compartir ideas y atraer a su audiencia.">
+            <img src="../images/blog.png" alt="Blogs y revistas en línea" />
+          </li>
+          <li class="product" id="websites-institucionais" data-name="Sitios institucionales"
+            data-description="Las empresas y organizaciones utilizan sitios institucionales para presentar su historia, misión y servicios. Están diseñados para transmitir profesionalismo, confiabilidad y proporcionar información clara a clientes y socios.">
+            <img src="../images/websites-institucionais.png" alt="Sitios institucionales" />
+          </li>
+          <li class="product" id="educacao" data-name="Sitios web educativos"
+            data-description="Enfocados en cursos y entrenamientos, estos sitios incluyen áreas para lecciones, materiales de apoyo y herramientas de evaluación. Están desarrollados para hacer el aprendizaje accesible e interactivo, ayudando a las instituciones a expandir su alcance.">
+            <img src="../images/educacao.png" alt="Sitios web educativos" />
+          </li>
+          <li class="product" id="sites-assinatura" data-name="Sitios de suscripción"
+            data-description="Ofrecen contenido exclusivo, como cursos, revistas digitales o streaming, a través de pagos recurrentes. Ideales para creadores de contenido y empresas que buscan monetizar materiales especializados, estos sitios mantienen a los usuarios comprometidos con actualizaciones constantes.">
+            <img src="../images/sites-assinatura.png" alt="Sitios de suscripción" />
+          </li>
+          <li class="product" id="site-ongs" data-name="Sitios para ONGs"
+            data-description="Diseñados para organizaciones sin fines de lucro, estos sitios destacan causas sociales, proyectos y métodos de donación. Un diseño emocional y funcionalidades para voluntariado o donaciones en línea marcan la diferencia.">
+            <img src="../images/site-ongs.png" alt="Sitios para ONGs" />
+          </li>
+          <li class="product" id="sites-corporativos" data-name="Sitios corporativos"
+            data-description="Representando empresas de diferentes sectores, estos sitios comunican valores, misión y servicios. Incluyen secciones como Sobre Nosotros, Servicios y Contacto, siendo esenciales para la credibilidad y la atracción de clientes.">
+            <img src="../images/sites-corporativos.png" alt="Sitios corporativos" />
+          </li>
+          <li class="product" id="landing-pages" data-name="Landing Pages"
+            data-description="Enfocadas en la conversión, las landing pages son páginas únicas creadas para campañas de marketing específicas. Destacan ofertas o productos con mensajes claros, llamados a la acción impactantes y diseño atractivo, optimizados para generar leads o ventas.">
+            <img src="../images/landing-pages.png" alt="Landing Pages" />
+          </li>
+        </ul>
+      </article>
+      <article class="product-selected">
+        <img class="big-product" src="https://placehold.co/430x430?text=Selecciona+un+modelo"
+          alt="Producto seleccionado" />
+        <div class="product-info">
+          <h2 class="product-name" id="product-name">Descripción</h2>
+          <p class="product-description" id="product-description"></p>
+          <button class="btn-design" href="">Continuar propuesta</button>
+        </div>
+      </article>
+    </section>
+    <section class="send-proposal">
+      <h1>Personaliza tu sitio web</h1>
+      <form action="../php/send-proposal.php" method="POST">
+        <fieldset class="details-website">
+          <legend>Detalles de tu sitio web</legend>
+
+          <label for="">Selecciona la paleta de colores de tu sitio web:</label>
+          <input type="color" value="#ff0000" id="color1" name="color1">
+          <input type="color" value="#00ff00" id="color2" name="color2">
+          <input type="color" value="#0000ff" id="color3" name="color3">
+        </fieldset>
+
+        <fieldset>
+          <label for="layout-select">Confirma el diseño seleccionado</label>
+          <select name="layouts" id="layout-select">
+            <option value="">--Elige una de estas opciones--</option>
+            <option value="e-commerce">E-commerce</option>
+            <option value="portfolio">Portafolio Profesional</option>
+            <option value="blog">Blogs y Revistas Online</option>
+            <option value="websites-institucionais">Sitios Web Institucionales</option>
+            <option value="websites-Educação">Sitios Web Educativos</option>
+            <option value="sites-assinatura">Sitios de Suscripción</option>
+            <option value="ongs">Sitios de Caridad o ONGs</option>
+            <option value="sites-corporativos">Sitios Corporativos</option>
+            <option value="landing-pages">Landing Pages</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="logoUpload">Sube tu logo aquí:</label>
+          <input type="file" accept="image/png, image/jpeg" id="logoUpload" name="logo">
+        </fieldset>
+
+        <fieldset class="observation-website">
+          <legend>Observaciones</legend>
+          <label for="textArea">Añade una observación:</label>
+          <textarea name="observations" id="textArea" placeholder="Cuéntanos tu idea para tu sitio web:" rows="10"
+            cols="50"></textarea>
+        </fieldset>
+
+        <p>
+          <input class="btn-design" type="submit" value="Enviar propuesta">
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <h4>Design Frontier</h4>
+    <nav>
+      <ul>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#suport">Soporte</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <ul>
+        <li><a href="#services">Quiénes somos</a></li>
+        <li><a href="#projects">Misión</a></li>
+        <li><a href="#suport">Visión</a></li>
+        <li><a href="#about">Valores</a></li>
+      </ul>
+      <ul>
+        <li><a href="#services">Trabaja con nosotros</a></li>
+        <li><a href="#projects">Suscríbete a nuestro boletín</a></li>
+        <li><a href="#suport">Nuestro equipo</a></li>
+      </ul>
+      <ul>
+        <li><a href="#services">São Paulo</a></li>
+        <li><a href="#projects">Av. de la Innovación</a></li>
+        <li><a href="#suport">01010-010</a></li>
+        <li><a href="#about">(11) 3456-7890</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="www.youtube.com/@DesingFrontierAgência" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/desing_frontier/profilecard/?igsh=MXJ2MTNlczZlZ3B3dw==" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a href="www.linkedin.com/in/desing-frontier-agência-18512033b"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+  <script src="../js/change-support-button-states.js"></script>
+  <script src="../js/change-page-language.js"></script>
+  <script src="../js/select-product.js"></script>
+</body>
+</html>

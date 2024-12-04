@@ -56,8 +56,8 @@
               <a href=""><i class="fa-solid fa-language" id="icon-translate"></i></a>
             </div>
             <ul>
-              <li><a class="en" href="./assets/pages/page-en.html">English</a></li>
-              <li><a class="es" href="./assets/pages/page-en.html">Espanõl</a></li>
+              <li><a class="en" href="./page-to-buy-en.html">English</a></li>
+              <li><a class="es" href="./page-to-buy-es.html">Espanõl</a></li>
             </ul>
           </div>
       </nav>
@@ -111,35 +111,53 @@
         <div class="product-info">
           <h2 class="product-name" id="product-name">Descrição</h2>
           <p class="product-description" id="product-description"></p>
-          <button href="">Continuar proposta</button>
+          <a class="btn-design" href="#send-proposal">Continuar proposta</a>
         </div>
       </article>
     </section>
-    <section class="send-proposal">
+    <section class="send-proposal" id="send-proposal">
       <h1>Personalize seu website</h1>
-      <form action="../php/send-proposal">
-        <fieldset >
+      <form action="../php/send-proposal.php" method="POST">
+        <fieldset class="details-website">
           <legend>Detalhes do seu website</legend>
           
-          <label for="color1">Selecione as cores da paleta do seu website:</label>
+          <label for="">Selecione as cores da paleta do seu website:</label>
           <input type="color" value="#ff0000" id="color1" name="color1">
           <input type="color" value="#00ff00" id="color2" name="color2">
           <input type="color" value="#0000ff" id="color3" name="color3">
         </fieldset>
 
-        <fieldset >
+        <fieldset>
+          <label for="layout-select">Confirme o layout selecionado</label>
+
+          <select name="layout-select" id="layout-select">
+            <option value="">--Escolha uma dessas opções--</option>
+            <option value="e-commerce">E-commerce</option>
+            <option value="portfolio">Portfólio Profissional</option>
+            <option value="blog">Blogs e Revistas Online</option>
+            <option value="websites-institucionais">Websites Institucionais</option>
+            <option value="websites-Educação">Websites de Educação</option>
+            <option value="sites-assinatura">Sites de Assinatura</option>
+            <option value="ongs">Sites de Caridade ou ONGs</option>
+            <option value="sites-corporativos">Sites Corporativos</option>
+            <option value="landing-pages">Landing Pages</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
           <label for="logoUpload">Carregue sua logo marca aqui:</label>
           <input type="file" accept="image/png, image/jpeg" id="logoUpload" name="logo">
         </fieldset>
         
-        <fieldset>
+        <fieldset class="observation-website">
           <legend>Observações</legend>
           <label for="textArea">Adicione uma observação:</label>
           <textarea name="observations" id="textArea" placeholder="Nos conte a sua ideia para seu website:" rows="10" cols="50"></textarea>
         </fieldset>
 
         <p>
-          <input type="submit" value="Enviar proposta">
+          <input class="btn-design"
+           type="submit" value="Enviar proposta">
         </p>
       </form>
     </section>
@@ -184,10 +202,6 @@
       </a>
     </div>
   </footer>
-  <div class="attribution">
-    Coded by <a href="#">Kauê Lima 🍀</a>.
-    My <a href="https://kaueaclima.github.io/projeto-portifolio/" target="_blank">Portfólio</a>.
-  </div>
   <script src="../js/change-support-button-states.js"></script>
   <script src="../js/change-page-language.js"></script>
   <script src="../js/select-product.js"></script>

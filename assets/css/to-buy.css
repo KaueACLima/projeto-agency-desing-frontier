@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -137,31 +141,81 @@ body {
   gap: 15px;
 }
 
-.services-selection .send-proposal form fieldset legend {
+.services-selection .send-proposal form .details-website legend,
+.services-selection .send-proposal form .observation-website legend  {
+  color: #053e8b;
+  font-weight: 600;
+  letter-spacing: 2px;
   margin-bottom: 15px;
 }
 
-.services-selection .send-proposal form fieldset:nth-child(3) {
+.services-selection .send-proposal form  label {
+  color: #053e8b;
+  font-weight: 400;
+}
+
+.services-selection .send-proposal form .observation-website {
   display: flex;
   flex-direction: column;
 }
 
-/* .services-selection .send-proposal form fieldset label {
-  display: block;
-} */
-
-/* .services-selection .send-proposal form fieldset label input:nth-child(3) {
-  display: block;
+.services-selection .send-proposal form .observation-website label {
   margin-bottom: 15px;
-} */
-
-
-/*
-.services-selection .send-proposal form fieldset label input{
-  display: inline-block;
 }
 
+.services-selection .send-proposal form .observation-website textarea {
+  padding: 10px;
+  resize: none;
+}
 
-.services-selection .send-proposal  label:nth-child(1) {
-  margin: 15px 0;
-} */
+.services-selection .send-proposal form .observation-website textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #4a4c50cb;
+}
+
+.services-selection .btn-design {
+  cursor: pointer;
+  padding: 15px 10px;
+  letter-spacing: 2px;
+  background-color: #ffbd1b;
+  border-radius: 10px;
+}
+
+.services-selection .btn-design:hover {
+  color: #e5e6e8;
+  background-color: #053e8b;
+}
+
+@media (max-width: 429px) {
+  .services-selection .product-grade {
+    flex-direction: column;
+  }
+
+  .services-selection .product-grade .types-products .product-list .product {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .services-selection .product-grade .product-selected .big-product {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    margin: 15px auto;
+  }
+
+  .services-selection .send-proposal {
+    width: 370px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.observation-website textarea {
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  height: 150px;
+}
+
+}

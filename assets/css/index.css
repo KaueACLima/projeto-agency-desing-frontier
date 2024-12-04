@@ -1,5 +1,7 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -183,7 +185,6 @@ body {
 
   .services {
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(4, 1fr); */
     padding: 0;
     text-align: center;
   }
